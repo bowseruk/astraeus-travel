@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+// This is the framer motion library.
+import { motion, AnimatePresence } from "framer-motion"
+// This is the react router library.
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+// These are our page functions we are importing.
+import Home from './pages/home.jsx'
+import Mars from './pages/mars.jsx'
+import Planet from './pages/planet.jsx'
+// CSS file for the app
+import './App.css';
+// This states the element a route produces
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: 'planet/mars',
+    element: <Mars />
+  },
+  {
+    path: "planet/:planetID",
+    element: <Planet />
+  }
+], {
+  basename: "/",
+});
+// The app function that is called by main.jsx
+function App(props) {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <AnimatePresence>
+      <RouterProvider router={router} />
+    </AnimatePresence>
   )
 }
-
+// Allows App to be exported
 export default App
