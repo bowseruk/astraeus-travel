@@ -1,10 +1,15 @@
+import Navigation from '../components/navigation'
+import SolarSystem from '../components/solarSystem'
 import './home.css'
 
 function Home(props) {
     return (
         <div>
-            <h1>Astraeus Travel</h1>
-            <p>The number 1 interplanetary trip planner!</p>
+            <Navigation />
+            <SolarSystem />
+            <p>Description</p>
+            {/* Modal */}
+
         </div>
     )
 }
