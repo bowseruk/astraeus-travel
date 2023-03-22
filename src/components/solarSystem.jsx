@@ -1,4 +1,4 @@
-import 'solarSystem.css';
+import './solarSystem.css';
 
 function SolarSystem(props) {
     return (
