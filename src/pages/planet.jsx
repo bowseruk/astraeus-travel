@@ -1,11 +1,17 @@
 import { useParams } from "react-router-dom";
+import Navigation from '../components/navigation'
+import PlanetPicture from '../components/planetPicture';
+import PlanetData from '../components/planetData';
 import './planet.css'
 
 function Planet(props) {
     const {planetID} = useParams()
     return (
         <div>
-            <h1>{planetID} Page</h1>
+            <Navigation/>
+            <PlanetPicture planet={planetID} />
+            <PlanetDescription planet={planetID} />
+            <PlanetData planet={planetID} />
         </div>
     )
 }
