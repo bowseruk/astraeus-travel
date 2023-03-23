@@ -33,7 +33,6 @@ function App(props) {
   return (
     <AnimatePresence>
       hello App
-      <img src={`./assets/images/pink-nebula.jpg`} className="square-image"/>
       <RouterProvider router={router} />
     </AnimatePresence>
   )

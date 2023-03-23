@@ -5,15 +5,31 @@ const base_url = "https://api.le-systeme-solaire.net/rest/bodies/"
 // planet IDs: mercure, venus, terre, mars, jupiter, saturne, uranus, neptune. 
 
 function useSolaire (planetID) {
+    let planet
+    switch (planetID) {
+        case "Mercury" || "mercury":
+            planet = "mercure"
+            break;
+        case "Earth" || "earth":
+            planet = "terre"
+            break;
+        case "Saturn" || "saturn":
+            planet = "saturne"
+            break;
+        default:
+            planet = planetID.toLowerCase(); 
+            break;
+    }
     const [data, setData] = useState(null)
     const [error, setError] = useState("")
-    const queryUrl = base_url + planetID
+    const queryUrl = base_url + planet
 
     useEffect(() => {
         fetch(queryUrl)
     .then(res => res.json())
     .then(newData => {
         setData(newData)
+        console.log(newData)
     })
     .catch(err => {
         setError(err)
