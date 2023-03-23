@@ -29,14 +29,14 @@ function useSolaire (planetID) {
     .then(res => res.json())
     .then(newData => {
         setData(newData)
-        console.log(newData)
     })
     .catch(err => {
         setError(err)
     })
         
     }, [planetID])
-
+    
+    console.log(data)
     return { data, error }
 }
 
