@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import Navigation from '../components/navigation'
 import PlanetPicture from '../components/planetPicture';
+import PlanetDescription from '../components/planetDescription';
 import PlanetData from '../components/planetData';
-import PlanetDescription from "../components/planetDescription";
 import './planet.css'
 
 function Planet(props) {

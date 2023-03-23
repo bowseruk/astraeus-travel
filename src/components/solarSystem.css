@@ -1,0 +1,259 @@
+.solar-system {
+    position: relative;
+    --sun: yellow;
+    --mercury: #1a1a1a;
+    --venus: #e6e6e6;
+    --earth: #2f6a69;
+    --earth-year: 1000s;
+    /* --earth-year: 31,536,000s; */
+    --moon: grey;
+    --mars: #993d00;
+    --ceres: orange;
+    --jupiter: #b07f35;
+    --saturn: #b08f36;
+    --uranus: #5580aa;
+    --neptune: #366896;
+    --pluto: blue;
+    --haumea: orange;
+    --makemake: rgb(215, 185, 160);
+    --eris: rgb(223, 223, 223);
+    width: 100%;
+    max-width: min(100vh, 100vw);
+    max-height: min(100vh, 100vw);
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: radial-gradient(var(--sun), rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.8), transparent 70%), url("../assets/images/solar-system-background.jpeg");
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Define keyframes for the an orbit animation */
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.solar-system .sun,
+.solar-system .orbit,
+.solar-system .moon-orbit,
+.solar-system .planet,
+.solar-system .moon {
+    position: absolute;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Center the elements in the object */
+.solar-system .sun,
+.solar-system .orbit {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solar-system .sun {
+    background: radial-gradient(yellow, orange);
+    width: 7%;
+    z-index: 2;
+}
+
+.solar-system .planet,
+.solar-system .moon {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solar-system .planet {
+    height: min(0.5rem, 0.5rem);
+    aspect-ratio: 1 / 1;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.solar-system .moon {
+    height: 20%;
+    width: 20%;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.solar-system .orbit,
+.solar-system .moon-orbit {
+    border: 0.05rem solid black;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.inner-system {
+    visibility: visible;
+}
+
+.outer-system {
+    visibility: visible;
+}
+
+.dwarf-planet {
+    visibility: hidden;
+}
+
+.moon-orbit {
+    visibility: hidden;
+}
+
+.solar-system .moon-orbit {
+    top: 0%;
+    left: 50%;
+    height: 10%;
+    width: 10%;
+}
+
+.solar-system .orbit-mercury {
+    border-color: var(--mercury);
+    width: 18%;
+    animation: orbit calc(var(--earth-year) * 0.24) linear infinite;
+    
+}
+
+.solar-system .planet-mercury {
+    background: var(--mercury);
+}
+
+.solar-system .orbit-venus {
+    border-color: var(--venus);
+    width: 28%;
+    animation: orbit calc(var(--earth-year) * 0.616) linear infinite;
+}
+
+.solar-system .planet-venus {
+    background: var(--venus);
+}
+
+.solar-system .orbit-earth {
+    border-color: var(--earth);
+    width: 33%;
+    animation: orbit var(--earth-year) linear infinite;
+}
+
+.solar-system .moon-orbit-moon {
+    border: var(--earth);
+    width: 11%;
+    height: 11%;
+    animation: orbit calc(var(--earth-year) * 0.0766) linear infinite;
+}
+
+.solar-system .planet-earth {
+    background: var(--earth);
+}
+
+.solar-system .moon-moon {
+    background: var(--moon);
+}
+
+.solar-system .orbit-mars {
+    border-color: var(--mars);
+    width: 40%;
+    animation: orbit calc(var(--earth-year) * 1.889) linear infinite;
+}
+
+.solar-system .planet-mars {
+    background: var(--mars);
+}
+
+.solar-system .orbit-ceres {
+    border-color: var(--ceres);
+    width: 49%;
+    animation: orbit calc(var(--earth-year) * 4.6) linear infinite;
+}
+
+.solar-system .planet-ceres {
+    background: var(--ceres);
+}
+
+
+.solar-system .orbit-jupiter {
+    border-color: var(--jupiter);
+    width: 59%;
+    animation: orbit calc(var(--earth-year) * 11.863) linear infinite;
+}
+
+.solar-system .planet-jupiter {
+    background: var(--jupiter);
+}
+
+.solar-system .orbit-saturn {
+    border-color: var(--saturn);
+    width: 69%;
+    animation: orbit calc(var(--earth-year) * 29.456) linear infinite;
+}
+
+.solar-system .planet-saturn {
+    background: var(--saturn);
+}
+
+.solar-system .orbit-uranus {
+    border-color: var(--uranus);
+    width: 80%;
+    animation: orbit calc(var(--earth-year) * 84.016) linear infinite;
+}
+
+.solar-system .planet-uranus {
+    background: var(--uranus);
+}
+
+.solar-system .orbit-neptune {
+    border-color: var(--neptune);
+    width: 87%;
+    animation: orbit calc(var(--earth-year) * 164.791) linear infinite;
+}
+
+.solar-system .planet-neptune {
+    background: var(--neptune);
+}
+
+.solar-system .orbit-pluto {
+    border-color: var(--pluto);
+    width: 91%;
+    animation: orbit calc(var(--earth-year) * 247.857) linear infinite;
+}
+
+.solar-system .planet-pluto {
+    background: var(--pluto);
+}
+
+.solar-system .orbit-haumea {
+    border-color: var(--haumea);
+    width: 93%;
+    animation: orbit calc(var(--earth-year) * 285) linear infinite;
+}
+
+.solar-system .planet-haumea {
+    background: var(--haumea);
+}
+
+.solar-system .orbit-makemake {
+    border-color: var(--makemake);
+    width: 94%;
+    animation: orbit calc(var(--earth-year) * 305.34) linear infinite;
+}
+
+.solar-system .planet-makemake {
+    background: var(--makemake);
+}
+
+.solar-system .orbit-eris {
+    border-color: var(--eris);
+    width: 100%;
+    animation: orbit calc(var(--earth-year) * 557) linear infinite;
+}
+
+.solar-system .planet-eris {
+    background: var(--eris);
+}
