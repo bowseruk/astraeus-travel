@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
 import './solarSystem.css';
 
 function SolarSystem(props) {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     return (
         <div className="solar-system" onClick={(event) => {navigate(`/planet/${event.target.id}`)}}>
             <div className="sun" />
@@ -20,14 +21,14 @@ function SolarSystem(props) {
             </div>
             <div className="inner-system orbit orbit-mars">
                 <div id="mars" className="planet planet-mars"></div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
+                <div className="moon-orbit moon-orbit-phobos">
+                    <div id="phobos" className="moon moon-phobos"></div>
                 </div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
+                <div className="moon-orbit moon-orbit-deimos">
+                    <div id="moon" className="moon moon-deimos"></div>
                 </div>
             </div>
-            <div className="outer-system orbit orbit-ceres">
+            <div className="dwarf-planet outer-system orbit orbit-ceres">
                 <div id="ceres" className="planet planet-ceres"></div>
             </div>
             <div className="outer-system orbit orbit-jupiter">
