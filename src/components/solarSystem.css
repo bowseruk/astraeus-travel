@@ -123,7 +123,7 @@
 }
 
 .solar-system .planet-mercury {
-    background-color: var(--mercury);
+    background: var(--mercury);
 }
 
 .solar-system .orbit-venus {
@@ -133,7 +133,7 @@
 }
 
 .solar-system .planet-venus {
-    background-color: var(--venus);
+    background: var(--venus);
 }
 
 .solar-system .orbit-earth {
@@ -143,18 +143,18 @@
 }
 
 .solar-system .moon-orbit-moon {
-    border-color: var(--earth);
+    border: var(--earth);
     width: 11%;
     height: 11%;
     animation: orbit calc(var(--earth-year) * 0.0766) linear infinite;
 }
 
 .solar-system .planet-earth {
-    background-color: var(--earth);
+    background: var(--earth);
 }
 
 .solar-system .moon-moon {
-    background-color: var(--moon);
+    background: var(--moon);
 }
 
 .solar-system .orbit-mars {
@@ -164,7 +164,7 @@
 }
 
 .solar-system .planet-mars {
-    background-color: var(--mars);
+    background: var(--mars);
 }
 
 .solar-system .orbit-ceres {
@@ -174,7 +174,7 @@
 }
 
 .solar-system .planet-ceres {
-    background-color: var(--ceres);
+    background: var(--ceres);
 }
 
 
@@ -185,7 +185,7 @@
 }
 
 .solar-system .planet-jupiter {
-    background-color: var(--jupiter);
+    background: var(--jupiter);
 }
 
 .solar-system .orbit-saturn {
@@ -195,7 +195,7 @@
 }
 
 .solar-system .planet-saturn {
-    background-color: var(--saturn);
+    background: var(--saturn);
 }
 
 .solar-system .orbit-uranus {
@@ -205,7 +205,7 @@
 }
 
 .solar-system .planet-uranus {
-    background-color: var(--uranus);
+    background: var(--uranus);
 }
 
 .solar-system .orbit-neptune {
@@ -215,7 +215,7 @@
 }
 
 .solar-system .planet-neptune {
-    background-color: var(--neptune);
+    background: var(--neptune);
 }
 
 .solar-system .orbit-pluto {
@@ -225,7 +225,7 @@
 }
 
 .solar-system .planet-pluto {
-    background-color: var(--pluto);
+    background: var(--pluto);
 }
 
 .solar-system .orbit-haumea {
@@ -235,7 +235,7 @@
 }
 
 .solar-system .planet-haumea {
-    background-color: var(--haumea);
+    background: var(--haumea);
 }
 
 .solar-system .orbit-makemake {
@@ -245,7 +245,7 @@
 }
 
 .solar-system .planet-makemake {
-    background-color: var(--makemake);
+    background: var(--makemake);
 }
 
 .solar-system .orbit-eris {
@@ -255,5 +255,5 @@
 }
 
 .solar-system .planet-eris {
-    background-color: var(--eris);
+    background: var(--eris);
 }
