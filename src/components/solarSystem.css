@@ -1,0 +1,239 @@
+.solar-system {
+    position: relative;
+    --sun: yellow;
+    --mercury: #1a1a1a;
+    --venus: #e6e6e6;
+    --earth: #2f6a69;
+    --moon: grey;
+    --mars: #993d00;
+    --ceres: orange;
+    --jupiter: #b07f35;
+    --saturn: #b08f36;
+    --uranus: #5580aa;
+    --neptune: #366896;
+    --pluto: blue;
+    --haumea: orange;
+    --makemake: rgb(215, 185, 160);
+    --eris: rgb(223, 223, 223);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(var(--sun), black 20%, black, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.solar-system .sun, .solar-system .orbit, .solar-system .moon-orbit, .solar-system .planet, .solar-system .moon {
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* Center the elements in the object */
+.solar-system .sun, .solar-system .orbit {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solar-system .sun {
+    background: radial-gradient(yellow, orange);
+    width: 10%;
+    height: 10%;
+    z-index: 2;
+}
+
+.solar-system .planet, .solar-system .moon{
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.solar-system .planet {
+    height: 10px;
+    width: 10px;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.solar-system .moon {
+    height: 20%;
+    width: 20%;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.solar-system .orbit, .solar-system .moon-orbit {
+    border: 1px dotted black;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.inner-system {
+    visibility: visible;
+}
+
+.outer-system {
+    visibility: visible;
+}
+
+.dwarf-planet {
+    visibility: hidden;
+}
+
+.moon-orbit {
+    visibility: hidden;
+}
+
+.solar-system .moon-orbit {
+    top: 0%;
+    left: 50%;
+    height: 10%;
+    width: 10%;
+}
+
+.solar-system .orbit-mercury {
+    border-color: var(--mercury);
+    width: 15%;
+    height: 15%;
+    transform: translate(-50%, -50%) rotate(33deg);
+}
+
+.solar-system .planet-mercury {
+    background-color: var(--mercury);
+}
+
+.solar-system .orbit-venus {
+    border-color: var(--venus);
+    width: 20%;
+    height: 20%;
+    transform: translate(-50%, -50%) rotate(133deg);
+}
+
+.solar-system .planet-venus {
+    background-color: var(--venus);
+}
+
+.solar-system .orbit-earth {
+    border-color: var(--earth);
+    width: 25%;
+    height: 25%;
+}
+
+.solar-system .moon-orbit-moon {
+    border-color: var(--earth);
+    width: 11%;
+    height: 11%;
+}
+
+.solar-system .planet-earth {
+    background-color: var(--earth);
+}
+
+.moon-moon {
+
+}
+
+.solar-system .moon-moon {
+    background-color: var(--moon);
+}
+
+.solar-system .orbit-mars {
+    border-color: var(--mars);
+    width: 30%;
+    height: 30%;
+}
+
+.solar-system .planet-mars {
+    background-color: var(--mars);
+}
+
+.solar-system .orbit-ceres {
+    border-color: var(--ceres);
+    width: 35%;
+    height: 35%;
+}
+
+.solar-system .planet-ceres {
+    background-color: var(--ceres);
+}
+
+
+.solar-system .orbit-jupiter {
+    border-color: var(--jupiter);
+    width: 40%;
+    height: 40%;
+}
+
+.solar-system .planet-jupiter {
+    background-color: var(--jupiter);
+}
+
+.solar-system .orbit-saturn {
+    border-color: var(--saturn);
+    width: 45%;
+    height: 45%;
+}
+
+.solar-system .planet-saturn {
+    background-color: var(--saturn);
+}
+
+.solar-system .orbit-uranus {
+    border-color: var(--uranus);
+    width: 50%;
+    height: 50%;
+}
+
+.solar-system .planet-uranus {
+    background-color: var(--uranus);
+}
+
+.solar-system .orbit-neptune {
+    border-color: var(--neptune);
+    width: 55%;
+    height: 55%;
+}
+
+.solar-system .planet-neptune {
+    background-color: var(--neptune);
+}
+
+.solar-system .orbit-pluto {
+    border-color: var(--pluto);
+    width: 60%;
+    height: 60%;
+}
+
+.solar-system .planet-pluto {
+    background-color: var(--pluto);
+}
+
+.solar-system .orbit-haumea {
+    border-color: var(--haumea);
+    width: 65%;
+    height: 65%;
+}
+
+.solar-system .planet-haumea {
+    background-color: var(--haumea);
+}
+
+.solar-system .orbit-makemake {
+    border-color: var(--makemake);
+    width: 70%;
+    height: 70%;
+}
+
+.solar-system .planet-makemake {
+    background-color: var(--makemake);
+}
+
+.solar-system .orbit-eris {
+    border-color: var(--eris);
+    width: 75%;
+    height: 75%;
+    z-index: 1;
+}
+
+.solar-system .planet-eris {
+    background-color: var(--eris);
+}
