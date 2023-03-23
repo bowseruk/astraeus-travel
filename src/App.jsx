@@ -32,7 +32,6 @@ const router = createBrowserRouter([
 function App(props) {
   return (
     <AnimatePresence>
-      hello App
       <RouterProvider router={router} />
     </AnimatePresence>
   )
