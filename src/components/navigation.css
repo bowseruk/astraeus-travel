@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(251, 35, 35, 0.1);
   }
   
   .logo {
@@ -19,17 +19,42 @@
   }
   
   nav li {
-    margin-right: 20px;
+    margin-right: 80px;
   }
   
   nav a {
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 133, 2);
     font-weight: bold;
     transition: all 0.3s ease;
   }
   
   nav a:hover {
-    color: #0077cc;
+    color: #f4ff24;
   }
   
+  @media (max-width: 768px) {
+    .header {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .logo {
+      width: 30px;
+    }
+    
+    .nav-links li a {
+      color: #fff;
+    }
+    
+    nav a {
+      color: #d61212;
+      background-color: #fff;
+     
+    }
+
+    nav a:hover {
+        color: #d08119;
+      }
+  }
