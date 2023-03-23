@@ -1,8 +1,5 @@
 import './navigation.css';
 
-function Navigation(props) {
-    return null;
-}
 
 import React from "react";
 import { Link } from "react-router-dom";
@@ -10,7 +7,7 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <header className="header">
-      <img className="logo" src="path/to/your/logo.png" alt="Logo" />
+      <img className="logo" src="" alt="Logo" />
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
