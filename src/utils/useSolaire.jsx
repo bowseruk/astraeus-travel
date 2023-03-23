@@ -6,6 +6,7 @@ const base_url = "https://api.le-systeme-solaire.net/rest/bodies/"
 
 function useSolaire (planetID) {
     let planet
+    // switch case to change planet to french id
     switch (planetID) {
         case "Mercury" || "mercury":
             planet = "mercure"
@@ -20,23 +21,26 @@ function useSolaire (planetID) {
             planet = planetID.toLowerCase(); 
             break;
     }
+    // set up data and error consts 
+    console.warn("function has run")
     const [data, setData] = useState(null)
     const [error, setError] = useState("")
     const queryUrl = base_url + planet
+    // console.log(`query: ${queryUrl}`)
 
+    // do api query every time planet changes
     useEffect(() => {
         fetch(queryUrl)
-    .then(res => res.json())
-    .then(newData => {
+        .then(res => res.json())
+        .then(newData => {
         setData(newData)
     })
     .catch(err => {
         setError(err)
-    })
-        
-    }, [planetID])
-    
-    console.log(data)
+    })  
+    }, [planet])
+
+    // return the api response
     return { data, error }
 }
 

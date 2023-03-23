@@ -6,11 +6,12 @@ import useSolaire from '../utils/useSolaire';
 
 function PlanetData(props) {
     const { data, error } = useSolaire(props.planet); 
+    console.log(data)
 
     return <div>
         <h1>Planet Data</h1>
         <p>Name: {data?.englishName}</p>
-        <p>Moons: {data.moons.map(moon => {
+        <p>Moons: {data?.moons.map(moon => {
             return moon.moon
         })}</p>
         <p>Mass: {data?.mass.massValue} ** {data?.mass.massExponent}</p>
