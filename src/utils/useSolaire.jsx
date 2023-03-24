@@ -22,11 +22,9 @@ function useSolaire (planetID) {
             break;
     }
     // set up data and error consts 
-    console.warn("function has run")
     const [data, setData] = useState(null)
     const [error, setError] = useState("")
     const queryUrl = base_url + planet
-    // console.log(`query: ${queryUrl}`)
 
     // do api query every time planet changes
     useEffect(() => {

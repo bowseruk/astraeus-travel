@@ -6,7 +6,7 @@ import PlanetData from '../components/planetData';
 import './planet.css'
 
 function Planet(props) {
-    const {planetID} = useParams()
+    const {planetID = "mars"} = useParams()
     return (
         <div>
             <Navigation/>
