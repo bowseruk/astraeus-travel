@@ -1,60 +1,77 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(251, 35, 35, 0.1);
-  }
-  
-  .logo {
-    max-width: 100px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 80px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: rgb(255, 133, 2);
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #f4ff24;
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
-    
-    .logo {
-      width: 30px;
-    }
-    
-    .nav-links li a {
-      color: #fff;
-    }
-    
-    nav a {
-      color: #d61212;
-      background-color: #fff;
-     
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(12, 0, 0);
+  box-shadow: 0 2px 4px rgba(251, 35, 35, 0.1);
+}
 
-    nav a:hover {
-        color: #d08119;
-      }
+.logo {
+  max-width: 100px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 133, 2);
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+  word-spacing: 2px;
+  font-weight: 900;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4ff24;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
   }
+
+  .logo {
+    width: 30px;
+
+    box-shadow: 0 0 00px 0px rgba(255, 255, 255, 0.5);
+  }
+
+  .nav-links li a {
+    color: #fff;
+  }
+
+  nav a {
+    color: #000000;
+    background-color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px #ff0000;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       */
+  }
+
+  /* nav a:hover {
+        color: #d08119;
+      } */
+}
