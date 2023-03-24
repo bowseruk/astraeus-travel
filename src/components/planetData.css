@@ -1,2 +1,29 @@
-
-  
+#planetData {
+    background-color: black;
+    color: white;
+    padding: 10px 5px 10px 5px; 
+}
+#planetData table {
+    margin: 0 auto;
+}
+#planetData tr {
+    height: 34px;
+}
+#planetData th {
+    background-color: #babaff;
+    font-size: 1.1rem; 
+    color: black;
+    border-radius: 5px;
+}
+#planetData td {
+    background-color: darkblue;
+    padding: 5px; 
+    padding-left: 15px; 
+    border-radius: 5px;
+}
+#planetData ul {
+    padding-left: 15px;
+}
+#planetData sup {
+    font-style: italic;
+}

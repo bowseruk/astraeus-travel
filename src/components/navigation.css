@@ -52,11 +52,9 @@ nav a:hover {
     left: 0;
     background-color: black;
   }
-
-  .logo {
-    width: 30px;
-
-    box-shadow: 0 0 00px 0px rgba(255, 255, 255, 0.5);
+  
+  .header .logo {
+    max-width: 100px;
   }
 
   .nav-links li a {

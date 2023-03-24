@@ -2,23 +2,62 @@ import React from 'react';
 import './planetData.css';
 import useSolaire from '../utils/useSolaire';
 
-// data=englishName,moons,mass,vol,gravity,discoveredBy,discoveryData"
+// ?data=englishName,moons,mass,vol,gravity,discoveredBy,discoveryData"
 
 function PlanetData(props) {
     const { data, error } = useSolaire(props.planet); 
-    console.log(data)
 
-    return <div>
-        <h1>Planet Data</h1>
-        <p>Name: {data?.englishName}</p>
-        <p>Moons: {data?.moons.map(moon => {
-            return moon.moon
-        })}</p>
-        <p>Mass: {data?.mass.massValue} ** {data?.mass.massExponent}</p>
-        <p>Vol: {data?.vol.volValue} ** {data?.vol.volExponent}</p>
-        <p>Gravity: {data?.gravity}</p>
-        <p>Discovered By: {data?.discoveredBy ? data?.discoveredBy : "Unknown"}</p>
-        <p>Discovery Date: {data?.discoveryDate ? data?.discoveryDate : "Unknown"}</p>
+    return <div id="planetData">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Moons (Max 10)</th>
+                    <td> 
+                        <ul>
+                        {/* add each moon in <li> */}
+                        
+                        {data?.moons ? 
+                        data?.moons?.map((moon, index) => {
+                            if(index < 10) {
+                              return (<li key={moon.moon}>{moon.moon}</li>)
+                              }
+                        })
+                        : "none"}
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mass</th>
+                    <td>
+                      {data?.mass.massValue}<sup>{data?.mass.massExponent}</sup> kg
+                    </td>
+                </tr>
+                <tr>
+                    <th>Volume</th>
+                    <td>
+                      {data?.vol.volValue}<sup>{data?.vol.volExponent}</sup> km<sup>3</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gravity</th>
+                    <td>
+                      {data?.gravity} m/s<sup>2</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Discovered By</th>
+                    <td>
+                      {data?.discoveredBy ? data?.discoveredBy : "Unknown"}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Discovery Date</th>
+                    <td>
+                      {data?.discoveryDate ? data?.discoveryDate : "Unknown"}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 }
 
