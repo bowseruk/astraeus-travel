@@ -39,7 +39,6 @@
     }
 }
 
-
 .solar-system .sun,
 .solar-system .orbit,
 .solar-system .moon-orbit,
@@ -76,6 +75,10 @@
     aspect-ratio: 1 / 1;
     z-index: 3;
     pointer-events: all;
+}
+
+.solar-system .planet:hover {
+    height: min(0.7rem, 0.7rem);
 }
 
 .solar-system .moon {

@@ -1,7 +1,9 @@
+import React from 'react';
 import './planetDescription.css';
+import SystemeSolaireAPI from '../utils/useSolaire';
 
-function PanetDescription(props) {
-    return null;
+function PlanetDescription(props) {
+    return <h1>Planet Description</h1>
 }
 
-export default PanetDescription
+export default PlanetDescription

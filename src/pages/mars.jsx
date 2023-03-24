@@ -3,7 +3,7 @@ import './mars.css'
 
 function Mars(props) {
     return (
-        <Planet />
+            <Planet />
     )
 }
 
