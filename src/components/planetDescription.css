@@ -1,0 +1,17 @@
+#planetDescription {
+    margin: 0; 
+    background-image: url("../assets/images/nebula.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#planetDescription .bgFilter {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: rgba(0,0,0,0.35);
+}
+
+#planetDescription p {
+    color: white;
+}
