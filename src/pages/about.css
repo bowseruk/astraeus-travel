@@ -1,5 +1,6 @@
 
-header {
+
+.aboutPage header {
     text-align: center;
     color: white;
 
@@ -7,7 +8,7 @@ font-size: 70px;
 
 }
 
-h2 {
+.aboutPage h2 {
     font-size: 50px;
     flex-wrap: wrap;
 }
@@ -17,10 +18,8 @@ h2 {
     display: flex;
 }
 
-.firstcard {
-    background-color: aqua;
-}
-img {
+
+.aboutPage img {
     display: flex;
  
     justify-content: center;
@@ -28,11 +27,9 @@ img {
 }
 
 
-.card-body {
-    background-color: bl;
-}
 
-figure {
+
+.aboutPage figure {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -45,7 +42,7 @@ figure {
 
 
 
-section {
+.aboutPage {
     background-image: url("/src/assets/images/main_image_deep_field_smacs0723-5mb.jpg");
 }
 
@@ -70,16 +67,30 @@ section {
 .card-body {
     margin: auto;
     text-align: center;
-padding:auto;
+    width: fit-content;
+    block-size: fit-content;
+    word-wrap: break-word;
+
 }
 
-img {
+.aboutPage img {
  
    max-width:75;
 }
 
 
-h1 {
+.aboutPage h1 {
     text-align: center;
     color: white;
+}
+
+.explanation {
+    text-align: center;
+    color: white;
+
+}
+
+.aboutPage p {
+color: whitesmoke;
+font-size: large;
 }
