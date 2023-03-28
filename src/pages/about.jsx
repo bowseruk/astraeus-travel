@@ -15,7 +15,9 @@ function About() {
                     <h2 className="card-title">Christos Laios</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                        <a href="https://www.youtube.com/"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -27,7 +29,9 @@ function About() {
                     <h2 className="card-title">Claire Ingram</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/Ing3rs"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -39,7 +43,9 @@ function About() {
                     <h2 className="card-title">Adam Bolsover</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/bowseruk"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -51,7 +57,9 @@ function About() {
                     <h2 className="card-title">Daisy Everard</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/DaisyEverard"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -61,7 +69,9 @@ function About() {
                     <h2 className="card-title">Angelo Silva</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/pandersail"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -71,7 +81,9 @@ function About() {
                     <h2 className="card-title">Clarissa Cole</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/RissaC2"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -81,7 +93,9 @@ function About() {
                     <h2 className="card-title">Anil Jassi</h2>
                     <p>Insert space quote</p>
                     <div className="card-actions justify-end">
+                    <a href="https://github.com/Skyline199"target="_blank" >
                         <button className="btn btn-primary">GitHub</button>
+                        </a>
                     </div>
                 </div>
             </div>
