@@ -1,41 +1,45 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/router";
-import Navigation from '../components/navigation'
-import SolarSystem from '../components/solarSystem'
-import './home.css';
+import { 
+    motion,
+    AnimatePresence,
+    useScroll
+} from "framer-motion";
+import Home from './home.jsx';
+import './transition.css';
 
-// display transition image before loading planet
+// display opening page before animating to homepage
 
-function Transition( { Component, pageProps }) {
+function Transition(props) {
+
+    const { scrollYProgress } = useScroll();
+
     return (
-        <AnimatePresence exitBeforeEnter>
-            {/* 'exitBeforeenter' ensures only one component is rendered at a time */}
-            <motion.div 
-                key= {router.route}
-                initial="initialState"
-                animate="animateState"
-                exit="exitState"
-                className="base-page-size"
+        <AnimatePresence>
+            
+            <div className="start-journey">
+                
+                <h1 className="transition-title">start your journey across the stars...</h1>
+                <p className="transition-subtitle">scroll to begin</p>
+                <span className="transition-subtitle-arrows">
+                    <p>⌄⌄⌄</p>
+                </span>
 
-                variants={{
-                    initialState: {
-                        // state when first loads
-                        opacity: 0,
-                    },
+                    <motion.div
+                        style={{ scaleX: scrollYProgress }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        <Home />
 
-                    animateState: {
-                        // state after it has finished animating
-                        opacity: 1,
-                    },
+                    </motion.div>
 
-                    exitState: {
-                        // state once it exits the screen
-                    },
-                }}
-            >
-                <Component {...pageProps} />
-            </motion.div>
+            </div>
+            
         </AnimatePresence>
+
+        
+        
+
     )
 }
 

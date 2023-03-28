@@ -13,6 +13,7 @@ function Navigation() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/random">Random</Link></li>
           <li><Link to="/back">Back</Link></li>
+          <li><Link to="/transition">Tranisition</Link></li>
         </ul>
       </nav>
     </header>
