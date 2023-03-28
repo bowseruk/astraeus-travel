@@ -10,6 +10,10 @@ function About() {
             <br></br>
             <br></br>
 
+
+
+
+
             <div className="container5">
                 <figure><img src="/src/assets/images/hs-2015-29-a-xlarge_web.jpg " width="500" height="500" alt="Shoes" /></figure>
                 <div className="card-body">
@@ -56,8 +60,7 @@ function About() {
                 <figure><img src="/src/assets/images/stsci-h-p1943a-f-2076x1484 (1).png" width="500" height="500" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">Daisy Everard</h2>
-                    <p>“monoculture, turned inward in an everlasting round of tedium. Only by accepting the other can it truly find diversion and inspiration; only by allowing the universe to be separate from it can it have the infinite variety it craves.”
-― Adrian Tchaikovsky, Children of Ruin</p>
+                    <p>Insert space quote</p>
                     <div className="card-actions justify-end">
                         <a href="https://github.com/DaisyEverard" target="_blank" >
                             <button className="btn btn-primary">GitHub</button>
