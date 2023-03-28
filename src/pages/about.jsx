@@ -14,7 +14,7 @@ function About() {
             <br></br>
             <br></br>
 
-            <h2 id="explanation" ></h2>
+           
 
 
 
@@ -41,7 +41,8 @@ function About() {
                 <figure><img src="/src/assets/images/jupiterjpg.jpg" width="1000" height="750" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"><em>Claire Ingram</em></h2>
-                    <p>Insert space quote</p>
+                    <p> <em>"Make it so!" - Jean-Luc Picard</em>
+</p>
                     <div className="card-actions justify-end">
                         <a href="https://github.com/Ing3rs" target="_blank" >
                             <button className="btn btn-primary">GitHub</button>
@@ -84,7 +85,8 @@ function About() {
                 <figure><img src="/src/assets/images/solar-flare.en.jpg" width="1000" height="750" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"><em>Clarissa Cole</em></h2>
-                    <p>Insert space quote</p>
+                    <p> <em>so much universe so little time </em>
+</p>
                     <div className="card-actions justify-end">
                         <a href="https://github.com/RissaC2" target="_blank" >
                             <button className="btn btn-primary">GitHub</button>
