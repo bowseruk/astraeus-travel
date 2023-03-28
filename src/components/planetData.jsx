@@ -1,11 +1,11 @@
 import React from 'react';
 import './planetData.css';
 import useSolaire from '../utils/useSolaire';
-
-// ?data=englishName,moons,mass,vol,gravity,discoveredBy,discoveryData"
+import planetJson from "./planetDescription.json"
 
 function PlanetData(props) {
     const { data, error } = useSolaire(props.planet); 
+    const planetObj = planetJson.filter(pnt => pnt.name === props.planet)[0]
 
     // create list of moons
     const moonList = []
@@ -18,7 +18,6 @@ function PlanetData(props) {
             i ++; 
         }
     }
-    console.log(moonList)
 
     // return data
     return <div id="planetData">
@@ -54,6 +53,36 @@ function PlanetData(props) {
                     <th>Gravity</th>
                     <td>
                       {data?.gravity} m/s<sup>2</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>
+                      {planetObj.Type}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Year Length</th>
+                    <td>
+                      {`${planetObj['length of year']} Earth Days`}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Distance From Sun</th>
+                    <td>
+                      {`${planetObj['Distance from sun']} mil km`}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Velocity</th>
+                    <td>
+                      {`${planetObj.Velocity} m/s`}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Region</th>
+                    <td>
+                      {planetObj['Area of Solar System']}
                     </td>
                 </tr>
                 <tr>
