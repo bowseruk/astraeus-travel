@@ -1,75 +1,26 @@
+import React from 'react';
 import './planetData.css';
+import useSolaire from '../utils/useSolaire';
+
+// data=englishName,moons,mass,vol,gravity,discoveredBy,discoveryData"
 
 function PlanetData(props) {
-    return null;
+    const { data, error } = useSolaire(props.planet); 
+    console.log(data)
+
+    return <div>
+        <h1>Planet Data</h1>
+        <p>Name: {data?.englishName}</p>
+        <p>Moons: {data?.moons.map(moon => {
+            return moon.moon
+        })}</p>
+        <p>Mass: {data?.mass.massValue} ** {data?.mass.massExponent}</p>
+        <p>Vol: {data?.vol.volValue} ** {data?.vol.volExponent}</p>
+        <p>Gravity: {data?.gravity}</p>
+        <p>Discovered By: {data?.discoveredBy ? data?.discoveredBy : "Unknown"}</p>
+        <p>Discovery Date: {data?.discoveryDate ? data?.discoveryDate : "Unknown"}</p>
+    </div>
 }
 
 export default PlanetData;
 
-const myArray = [
-    {
-      "name": "Mercury",
-      "Type": "Terrestrial",
-      "length of year": 88,
-      "Distance from sun": 30349799,
-      "Velocity": 9507,
-      "Area of Solar System": innerSolarSystem,
-
-    },
-    {
-        "name": "Venus",
-        "Type": "Terrestrial",
-        "length of year": 225,
-        "Distance from sun": 66888973,
-        "Velocity": 78339,
-      "Area of Solar System": innerSolarSystem,
-    },
-    {
-        "name": "Earth",
-        "Type": "Terrestrial",
-        "length of year": 365,
-        "Distance from sun": 92645838,
-        "Velocity": 25031,
-      "Area of Solar System": innerSolarSystem,
-    },
-    {
-        "name": "Mars",
-      "Type": "Terrestrial",
-      "length of year": 687,
-      "Distance from sun": 152754627,
-      "Velocity": 11252,
-      "Area of Solar System": innerSolarSystem,
-    },
-    {
-        "name": "Jupiter",
-      "Type": "Gas Giant",
-      "length of year": 4333,
-      "Distance from sun": 460330331,
-      "Velocity": 134664,
-      "Area of Solar System": outerSolarSystem,
-    },
-    {
-        "name": "Saturn",
-      "Type": "Gas Giant",
-      "length of year": 10759,
-      "Distance from sun": 912331223,
-      "Velocity": 80731,
-      "Area of Solar System": outerSolarSystem,
-    },
-    {
-        "name": "Uranus",
-      "Type": "Ice Giant",
-      "length of year": 30687,
-      "Distance from sun": 1893363345,
-      "Velocity": 47826,
-      "Area of Solar System": outerSolarSystem,
-    },
-    {
-        "name": "Pluto",
-      "Type": "Dwarf Planet",
-      "length of year": 90530,
-      "Distance from sun": 3228582263,
-      "Velocity": 52702,
-      "Area of Solar System": outerSolarSystem,
-    }
-  ];
