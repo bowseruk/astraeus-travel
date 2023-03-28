@@ -1,0 +1,26 @@
+/* .start-journey {
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.transition-title {
+    color: white;
+    font-family: monospace, sans-serif;
+    font-size: 35px;
+    padding-bottom: 75px;
+    padding-top: 300px; /* this is added as the center div isn't working */
+    text-align: center;
+}
+
+.transition-subtitle,
+.transition-subtitle-arrows {
+    color: white;
+    font-family: monospace, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 0.5;
+}
