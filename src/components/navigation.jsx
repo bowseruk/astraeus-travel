@@ -9,7 +9,7 @@ function Navigation() {
   
   return (
     <header className="header">
-      <img className="logo" src="\src\assets\images\logo.png" alt="Logo" />
+      <Link to="/"><img className="logo" src="\src\assets\images\logo.png" alt="Logo" /></Link>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
