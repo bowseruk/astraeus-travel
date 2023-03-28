@@ -1,6 +1,5 @@
 #planetData {
-    background-color: black;
-    color: white;
+    background: linear-gradient(45deg, rgb(114 79 0),rgb(0 71 74), rgb(2, 0, 33));
     padding: 10px 5px 10px 5px; 
 }
 #planetData table {
@@ -10,13 +9,13 @@
     height: 34px;
 }
 #planetData th {
-    background-color: #babaff;
+    background-color: black;
+    color: white;
     font-size: 1.1rem; 
-    color: black;
     border-radius: 5px;
 }
 #planetData td {
-    background-color: darkblue;
+    background-color: rgb(234 234 234);
     padding: 5px; 
     padding-left: 15px; 
     border-radius: 5px;
