@@ -56,6 +56,15 @@
       "Velocity": 47826,
       "Area of Solar System": "Outer Solar System"
     },
+    {   
+        "name":"neptune",
+        "Description": "The first planet to be predicted my maths before it was discovered. It's named after Neptune, the Roman god of the sea (Poseidon in Greek), because its entire surface is covered by ice. The ice is made of many subtances including water, methane, and ammonia, and makes up over 80% of the planets total mass. It is currently unknown if there are any liquid oceans underneath this layer. Due to the high pressure on the planet, it is theorised that there could be oceans made of liquid diamond",
+        "Type": "Terrestrial",
+      "length of year": 60190,
+      "Distance from sun": 4473.30,
+      "Velocity": 54300,
+      "Area of Solar System": "Outer Solar System" 
+    },
     {
         "name":"pluto",
         "Description": "Pluto is a dwarf planet in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune. There may be millions of these icy objects, collectively referred to as Kuiper Belt objects (KBOs) or trans-Neptunian objects (TNOs), in this distant region of our solar system.\r\n\r\n    Pluto  which is smaller than Earths Moon  has a heart-shaped glacier thats the size of Texas and Oklahoma. This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows  but the snow is red.\r\n    \r\n    On July 14,\r\n    2015, NASAs New Horizons spacecraft made its historic flight through the Pluto system  providing the first close-up images of Pluto and its moons and collecting other data that has transformed our understanding of these mysterious worlds on the solar systems outer frontier.\r\n    \r\n    In the years since that groundbreaking flyby, nearly every conjecture about Pluto possibly being an inert ball of ice has been thrown out the window or flipped on its head.\r\n    \r\n    Its clear to me that the solar system saved the best for last! said Alan Stern, New Horizons principal investigator from the Southwest Research Institute, Boulder, Colorado. ","We could not have explored a more fascinating or scientifically important planet at the edge of our solar system. The New Horizons team worked for 15 years to plan and execute this flyby and Pluto paid us back in spades!":"\r\n    ",
