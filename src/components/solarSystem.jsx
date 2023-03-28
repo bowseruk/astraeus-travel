@@ -2,80 +2,33 @@ import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import './solarSystem.css';
 
+const planets = [
+    {name: "mercury", position: "inner", dwarf: false, moons: []},
+    {name: "venus", position: "inner", dwarf: false, moons: []},
+    {name: "earth", position: "inner", dwarf: false, moons: [{name: "moon"}]},
+    {name: "mars", position: "inner", dwarf: false, moons: [{name: "phobos"}, {name: "deimos"}]},
+    {name: "ceres", position: "outer", dwarf: true, moons: []},
+    {name: "jupiter", position: "outer", dwarf: false, moons: []},
+    {name: "saturn", position: "outer", dwarf: false, moons: []},
+    {name: "uranus", position: "outer", dwarf: false, moons: []},
+    {name: "neptune", position: "outer", dwarf: false, moons: []},
+    {name: "pluto", position: "outer", dwarf: true, moons: []},
+    {name: "haumea", position: "outer", dwarf: true, moons: []},
+    {name: "makemake", position: "outer", dwarf: true, moons: []},
+    {name: "eris", position: "outer", dwarf: true, moons: []}
+]
+
+const styles = {};
+
 function SolarSystem(props) {
     const navigate = useNavigate();
     return (
         <div className="solar-system" onClick={(event) => {navigate(`/planet/${event.target.id}`)}}>
             <div className="sun" />
-            <div className="inner-system orbit orbit-mercury">
-                <div id="mercury" className="planet planet-mercury"></div>
-            </div>
-            <div className="inner-system orbit orbit-venus ">
-                <div id="venus" className="planet planet-venus"></div>
-            </div>
-            <div className="inner-system orbit orbit-earth">
-                <div id="earth" className="planet planet-earth"></div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
-                </div>
-            </div>
-            <div className="inner-system orbit orbit-mars">
-                <div id="mars" className="planet planet-mars"></div>
-                <div className="moon-orbit moon-orbit-phobos">
-                    <div id="phobos" className="moon moon-phobos"></div>
-                </div>
-                <div className="moon-orbit moon-orbit-deimos">
-                    <div id="moon" className="moon moon-deimos"></div>
-                </div>
-            </div>
-            <div className="dwarf-planet outer-system orbit orbit-ceres">
-                <div id="ceres" className="planet planet-ceres"></div>
-            </div>
-            <div className="outer-system orbit orbit-jupiter">
-                <div id="jupiter" className="planet planet-jupiter"></div>
-            </div>
-            <div className="outer-system orbit orbit-saturn">
-                <div id="saturn" className="planet planet-saturn"></div>
-            </div>
-            <div className="outer-system orbit orbit-uranus">
-                <div id="uranus" className="planet planet-uranus"></div>
-            </div>
-            <div className="outer-system orbit orbit-neptune">
-                <div id="neptune" className="planet planet-neptune"></div>
-            </div>
-            <div className="dwarf-planet outer-system orbit orbit-pluto">
-                <div id="pluto" className="planet planet-pluto"></div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
-                </div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
-                </div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
-                </div>
-                <div className="moon-orbit moon-orbit-moon">
-                    <div id="moon" className="moon moon-moon"></div>
-                </div>
-            </div>
-            <div className="dwarf-planet outer-system orbit orbit-haumea">
-                <div id="haumea" className="planet planet-haumea"></div>
-                <div className="moon-orbit moon-orbit-hiiaka">
-                    <div id="hiiaka" className="moon moon-hiiaka"></div>
-                </div>
-                <div className="moon-orbit moon-orbit-namaka">
-                    <div id="namaka" className="moon moon-namaka"></div>
-                </div>
-            </div>
-            <div className="dwarf-planet outer-system orbit orbit-makemake">
-                <div id="makemake"  className="planet planet-makemake"></div>
-            </div>
-            <div className="dwarf-planet outer-system orbit orbit-eris">
-                <div id="eris"  className="planet planet-eris"></div>
-                <div className="moon-orbit moon-orbit-dysnomia">
-                    <div id="dysnomia" className="moon moon-dysnomia"></div>
-                </div>
-            </div>
+            { planets.map((planet) => (<div key={`orbit-${planet.name}`} className={`${planet.position}-system${(planet.dwarf) ? " dwarf-planet": ""} orbit orbit-${planet.name}`} >
+                <div key={planet.name} id={planet.name} className={`planet planet-${planet.name}`} />
+                { planet.moons.map((moon) => (<div key={moon.name} id={moon.name} className={`moon-orbit moon-${moon.name}`}><div className={`moon moon-${moon.name}`} /></div>)) }
+                </div>)) }
         </div>
     )
 }

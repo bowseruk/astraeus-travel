@@ -7,6 +7,20 @@ import useSolaire from '../utils/useSolaire';
 function PlanetData(props) {
     const { data, error } = useSolaire(props.planet); 
 
+    // create list of moons
+    const moonList = []
+    if (data?.moons) {
+        let i = 0;
+        while(i < 10) {
+            if (data.moons[i]) {
+                moonList.push(data.moons[i])
+            }
+            i ++; 
+        }
+    }
+    console.log(moonList)
+
+    // return data
     return <div id="planetData">
         <table>
             <tbody>
@@ -15,13 +29,11 @@ function PlanetData(props) {
                     <td> 
                         <ul>
                         {/* add each moon in <li> */}
-                        
-                        {data?.moons ? 
-                        data?.moons?.map((moon, index) => {
-                            if(index < 10) {
+                        {moonList.length ? 
+                        moonList.map((moon, index) => {
                               return (<li key={moon.moon}>{moon.moon}</li>)
                               }
-                        })
+                        )
                         : "none"}
                         </ul>
                     </td>
@@ -61,4 +73,4 @@ function PlanetData(props) {
     </div>
 }
 
-export default PlanetData
+export default PlanetData; 
