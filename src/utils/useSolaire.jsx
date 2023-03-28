@@ -6,7 +6,7 @@ const base_url = "https://api.le-systeme-solaire.net/rest/bodies/"
 
 function useSolaire (planetID) {
     let planet
-    // switch case to change planet to french id
+    // switch case to change planet to searchable API id
     switch (planetID) {
         case "Mercury" || "mercury":
             planet = "mercure"
