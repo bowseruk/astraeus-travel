@@ -7,16 +7,23 @@ import {
 } from "react-router-dom";
 // These are our page functions we are importing.
 import Home from './pages/home.jsx'
+import About from "./pages/about.jsx";
 import Mars from './pages/mars.jsx'
 import Planet from './pages/planet.jsx'
 // CSS file for the app
 import './App.css';
+
 // This states the element a route produces
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
+  {
+    path: "about",
+    element: <About />,
+  },
+  
   {
     path: 'planet/mars',
     element: <Mars />

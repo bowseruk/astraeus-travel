@@ -5,7 +5,7 @@
     --venus: #e6e6e6;
     --earth: #2f6a69;
     --earth-year: 1000s;
-    /* --earth-year: 31,536,000s; */
+    /* --earth-day: 10s; */
     --moon: grey;
     --mars: #993d00;
     --ceres: orange;
@@ -38,7 +38,6 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
 
 .solar-system .sun,
 .solar-system .orbit,
@@ -76,6 +75,10 @@
     aspect-ratio: 1 / 1;
     z-index: 3;
     pointer-events: all;
+}
+
+.solar-system .planet:hover {
+    height: min(0.7rem, 0.7rem);
 }
 
 .solar-system .moon {
