@@ -13,8 +13,7 @@ function Home(props) {
     return (
         <div className="transition">
             <Layout>
-                <planetModal></planetModal>
-            {/* <Navigation/>  */}
+                <PlanetModal></PlanetModal>
             <div className="start-journey">
                 <h1 className="transition-title">Start your journey across the stars...</h1>
                 <p className="transition-subtitle">scroll to begin</p>
