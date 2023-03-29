@@ -13,7 +13,7 @@ function Home(props) {
     return (
         <div className="transition">
             <Layout>
-                <PlanetModal></PlanetModal>
+                <planetModal></planetModal>
             {/* <Navigation/>  */}
             <div className="start-journey">
                 <h1 className="transition-title">Start your journey across the stars...</h1>
