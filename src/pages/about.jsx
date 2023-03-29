@@ -7,6 +7,7 @@ import image2 from "../assets/images//jupiterjpg.jpg"
 import image3 from "../assets/images//blackhole.png"
 import image4 from "../assets/images//stsci-h-p1943a-f-2076x1484 (1).png"
 import image5 from "../assets/images//main_image_star-forming_region_carina_nircam_final-5mb.jpg"
+import image6 from "../assets/images//solar-flare.en.jpg"
 
 
 
@@ -61,7 +62,7 @@ function About() {
 
 
             <div className="container5">
-                <figure><img src= {image3} width="1000" height="750" alt="Shoes" /></figure>
+                <figure><img src= {image3} width="1000" height="750" alt="Black hole" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"><em>Adam Bolsover</em></h2>
                     <p> <em>"The only way to discover the limits of the possible is to go beyond them into the impossible." - Arthur C. Clarke
@@ -90,7 +91,7 @@ function About() {
             </div>
 
             <div className="container5">
-                <figure><img src={image4} width="1000" height="750" alt="Solar Flare" /></figure>
+                <figure><img src={image6} width="1000" height="750" alt="Solar Flare" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"><em>Clarissa Cole</em></h2>
                     <p> <em>so much universe so little time </em>
