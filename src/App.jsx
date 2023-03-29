@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 // These are our page functions we are importing.
 import Home from './pages/home.jsx'
-import Transition from "./pages/transition.jsx";
 import About from "./pages/about.jsx";
 import Mars from './pages/mars.jsx'
 import Planet from './pages/planet.jsx'
@@ -18,13 +17,12 @@ import './App.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Transition />,
+    element: <Home />,
   },
   {
     path: "about",
     element: <About />,
   },
-  
   {
     path: 'planet/mars',
     element: <Mars />
