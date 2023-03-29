@@ -1,37 +1,39 @@
-import Navigation from '../components/navigation'
-import SolarSystem from '../components/solarSystem'
-import { motion, AnimatePresence } from "framer-motion"
-import './home.css'
+import { 
+    motion,
+    useScroll
+} from "framer-motion";
+import Layout from "../components/layout.jsx"
+import SolarSystem from "../components/solarSystem.jsx";
+import './home.css';
 
-
+// display opening page before animating to homepage
 function Home(props) {
+    const { scrollYProgress } = useScroll();
     return (
-        <div>
-            {/* added fade in for home page when loaded */}
-            <AnimatePresence>
-                <motion.div
-                // defines initial state of animation
-                initial={{ opacity: 0 }}
-
-                // defintes animation
-                animate={{ opacity: 1 }}
-
-                // defines animation on completion
-                exit={{ opacity: 0 }}
-
-                // set duration of animation
-                transition={{ duration: 0.5 }}
-                >
-                    
-                    <SolarSystem />
-                    <p>Description</p>
-                    {/* Modal */}
-
-                </motion.div>
-            </AnimatePresence>
-
+        <div className="transition">
+            <Layout>
+            {/* <Navigation/>  */}
+            <div className="start-journey">
+                <h1 className="transition-title">Start your journey across the stars...</h1>
+                <p className="transition-subtitle">scroll to begin</p>
+                <span className="transition-subtitle-arrows">
+                    <p>⌄⌄⌄</p>
+                </span>
+                <div className="spacer"></div>
+                    <motion.div
+                        style={{ scaleX: scrollYProgress }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    > 
+                    <div className="row">                 
+                        <SolarSystem />
+                    </div>  
+                    </motion.div>
+            </div> 
+            </Layout>
         </div>
     )
 }
 
-export default Home
+export default Home;

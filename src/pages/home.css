@@ -1,7 +1,50 @@
+
 body {
     background-image: url("../assets/images/homepage-space-background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+.transition-title {
+    color: white;
+    font-family: monospace, sans-serif;
+    font-size: 35px;
+    padding-bottom: 75px;
+    padding-top: 300px; /* this is added as the center div isn't working */
+    text-align: center;
+}
+
+.transition-subtitle,
+.transition-subtitle-arrows {
+    color: white;
+    font-family: monospace, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 0.5;
+}
+
+.transition .push {
+    height: calc(100% - 200px)
+}
+
+.spacer {
+    height: 100vh
+}
+
+.transition .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    max-height: 90vh;
+    min-width: 100vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .transition .row {
+        flex-direction: column;
+        /* margin-bottom: 30vh; */
+    }
 }
