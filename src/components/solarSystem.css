@@ -5,7 +5,7 @@
     --venus: #e6e6e6;
     --earth: #2f6a69;
     --earth-year: 1000s;
-    /* --earth-year: 31,536,000s; */
+    /* --earth-day: 10s; */
     --moon: grey;
     --mars: #993d00;
     --ceres: orange;
@@ -23,7 +23,8 @@
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-repeat: no-repeat;
-    background: radial-gradient(var(--sun), rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.8), transparent 70%), url("../assets/images/solar-system-background.jpeg");
+    /* background: radial-gradient(var(--sun), rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.8), transparent 70%), url("../assets/images/solar-system-background.jpeg"); */
+    background: radial-gradient(var(--sun), rgba(0,0,0,0.6) 20%, rgba(0,0,0,0.8), transparent 70%);
     z-index: 1;
     pointer-events: none;
 }

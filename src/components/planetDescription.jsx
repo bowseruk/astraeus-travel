@@ -1,9 +1,16 @@
 import React from 'react';
 import './planetDescription.css';
-import SystemeSolaireAPI from '../utils/useSolaire';
+import planetJson from "./planetDescription.json"
 
 function PlanetDescription(props) {
-    return <h1>Planet Description</h1>
+     const planetObj = planetJson.filter(pnt => pnt.name === props.planet)[0]
+
+    return <div id='planetDescription'>
+        <div className='bgFilter'>
+            <p>{planetObj.Description}</p>
+        </div>
+    </div>
+    
 }
 
 export default PlanetDescription

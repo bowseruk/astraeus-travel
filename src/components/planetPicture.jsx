@@ -1,5 +1,4 @@
 import './planetPicture.css'; 
-import squareUrl from "../assets/images/nebula.jpg";
 import mercuryUrl from "../assets/images/1-Mercury.png"
 import venusUrl from "../assets/images/2-Venus.png"
 import earthUrl from "../assets/images/3-Earth.png"
@@ -7,6 +6,7 @@ import marsUrl from "../assets/images/4-Mars.png"
 import jupiterUrl from "../assets/images/5-Jupiter.png"
 import saturnUrl from "../assets/images/6-Saturn.png"
 import uranusUrl from "../assets/images/7-Uranus.png"
+import neptuneUrl from "../assets/images/8-Neptune.png"
 import plutoUrl from "../assets/images/9-Pluto.png"
 
 function PlanetPicture(props) {
@@ -37,8 +37,7 @@ function PlanetPicture(props) {
             roundSrc = uranusUrl;
             break; 
          case "neptune":
-            // roundSrc = neptuneUrl;
-            // assets doesn't exist yet
+            roundSrc = neptuneUrl;
             break; 
          case "pluto":
             roundSrc = plutoUrl;
@@ -50,7 +49,6 @@ function PlanetPicture(props) {
     return <div id="planetPicture">
             <h1 className='cutout text'>{planet[0].toUpperCase() + planet.slice(1)}</h1>
             <img src={roundSrc} className="round-image"/>
-            <img src={squareUrl} className="square-image"/>
     </div>;
 }
 

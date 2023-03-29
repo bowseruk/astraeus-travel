@@ -1,0 +1,77 @@
+[
+    {   
+        "name":"mercury",
+        "Description": " The smallest planet in our solar system and nearest to the Sun Mercury is only slightly larger than Earths Moon, Full Moon is the Wolf Moon or Ice Moon, From the surface of Mercury the Sun would appear more than three times as large as it does when viewed from Earth and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun Mercury is not the hottest planet in our solar system  that title belongs to nearby Venus thanks to its dense atmosphere.\r\n    Because of Mercury's elliptical  egg-shaped orbit and sluggish rotation the Sun appears to rise briefly set and rise again from some parts of the planet's surface. The same thing happens in reverse at sunset. ",
+        "Type": "Terrestrial",
+      "length of year": 88,
+      "Distance from sun": 46.43,
+      "Velocity": 9507,
+      "Area of Solar System": "Inner Solar System" 
+    },
+     {    "name":"venus",
+        "Description": "Venus is the second planet from the Sun and is Earths closest planetary neighbor. Its one of the four inner, terrestrial (or rocky) planets, and  often called Earths twin because  similar in size and density. These are not identical twins, however  there are radical differences between the two worlds.\r\n\r\n\r\n Venus Squishy Outer Shell May Be Resurfacing the Planet\r\n Venus Resources\r\nVenus has a thick, toxic atmosphere filled with carbon dioxide and  perpetually shrouded in thick, yellowish clouds of sulfuric acid that trap heat, causing a runaway greenhouse effect. Its the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 900 degrees Fahrenheit (475 degrees Celsius)  hot enough to melt lead. The surface is a rusty color and its peppered with intensely crunched mountains and thousands of large volcanoes. Scientists think its possible some volcanoes are still active.\r\n",
+        "Type": "Terrestrial",
+        "length of year": 225,
+        "Distance from sun": 107.59,
+        "Velocity": 78339,
+      "Area of Solar System": "Inner Solar System"
+    },
+    {    "name":"earth",
+        "Description": "Our home planet is the third planet from the Sun, and the only place we know of so far thats inhabited by living things.\r\n\r\n    The Latest\r\n     New NASA Map Details 2023 and 2024 Solar Eclipses in the US\r\n     The Moon Illusion: Why Does the Moon Look So Big Sometimes?\r\n    While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.\r\n    \r\n    The name Earth is at least 1,\r\n    000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means ","the ground.":"\r\n    ",
+        "Type": "Terrestrial",
+        "length of year": 365,
+        "Distance from sun": 149.32,
+        "Velocity": 25031,
+      "Area of Solar System": "Inner Solar System"
+    },
+    {    "name":"mars",
+        "Description": "Mars is the fourth planet from the Sun  a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.\r\n\r\n    The Latest from Mars\r\n     NASA Retires InSight Mars Lander Mission After Years of Science\r\n     Stunning New Meteoroid Impact on Mars\r\n    Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.\r\n    \r\n    NASA currently has two rovers (Curiosity and Perseverance), one lander (InSight), and one helicopter (Ingenuity) exploring the surface of Mars.\r\n    \r\n    Perseverance rover  the largest, most advanced rover NASA has sent to another world  touched down on Mars on Feb. 18,\r\n    2021, after a 203-day journey traversing 293 million miles (472 million kilometers). The Ingenuity helicopter rode to Mars attached to the belly of Perseverance.\r\n    \r\n    Perseverance is one of three spacecraft that arrived at Mars in 2021. The Hope orbiter from the United Arab Emirates arrived on Feb. 9, 2021. China’s Tianwen-1 mission arrived on Feb. 10,\r\n    2021, and includes an orbiter, a lander, and a rover. Europe and India also have spacecraft studying Mars from orbit.\r\n    \r\n    In May 2021, China became the second nation to ever land successfully on Mars when its Zhurong Mars rover touched down.\r\n    \r\n    An international fleet of eight orbiters is studying the Red Planet from above including three NASA orbiters: 2001 Mars Odyssey, Mars Reconnaissance Orbiter, and MAVEN.\r\n    \r\n    These robotic explorers have found lots of evidence that Mars was much wetter and warmer, with a thicker atmosphere, billions of years ago.\r\n    ",
+        "Type": "Terrestrial",
+      "length of year": 687,
+      "Distance from sun": 247.77,
+      "Velocity": 11252,
+      "Area of Solar System": "Inner Solar System"
+    },
+    {    "name":"jupiter",
+        "Description": "Jupiter has a long history of surprising scientists  all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.\r\n\r\n   The Latest\r\n    40-Year Study Finds Mysterious Patterns in Temperatures at Jupiter\r\n    Jupiter Resources\r\n   Fifth in line from the Sun, Jupiter is, by far, the largest planet in the solar system  more than twice as massive as all the other planets combined.\r\n   \r\n   Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiters iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years.\r\n   \r\n   One spacecraft  NASA's Juno orbiter  is currently exploring this giant world.\r\n   ",
+        "Type": "Gas Giant",
+      "length of year": 4333,
+      "Distance from sun": 887.17,
+      "Velocity": 134664,
+      "Area of Solar System": "Outer Solar System"
+    },
+    {    "name":"saturn",
+        "Description": "Saturn is the sixth planet from the Sun and the second-largest planet in our solar system.\r\n\r\n   The Latest\r\n    10 Things: Why Cassini Mattered\r\n    Saturn and Titan Resources\r\n   Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings  made of chunks of ice and rock – but none are as spectacular or as complicated as Saturn's.\r\n   \r\n   Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.\r\n   ",
+        "Type": "Gas Giant",
+      "length of year": 10759,
+      "Distance from sun": 1585.40,
+      "Velocity": 80731,
+      "Area of Solar System": "Outer Solar System"
+    },
+    {   "name":"uranus",
+        "Description": "Uranus is the seventh planet from the Sun, and has the third-largest diameter in our solar system. It was the first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.\r\n\r\n    The Latest\r\n     Why Uranus and Neptune Are Different Colors\r\n    It was two years later that the object was universally accepted as a new planet, in part because of observations by astronomer Johann Elert Bode. Herschel tried unsuccessfully to name his discovery Georgium Sidus after King George III. Instead, the scientific community accepted Bode's suggestion to name it Uranus, the Greek god of the sky, as suggested by Bode.​\r\n    ",
+        "Type": "Ice Giant",
+      "length of year": 30687,
+      "Distance from sun": 3054.40,
+      "Velocity": 47826,
+      "Area of Solar System": "Outer Solar System"
+    },
+    {   
+        "name":"neptune",
+        "Description": "The first planet to be predicted my maths before it was discovered. It's named after Neptune, the Roman god of the sea (Poseidon in Greek), because its entire surface is covered by ice. The ice is made of many subtances including water, methane, and ammonia, and makes up over 80% of the planets total mass. It is currently unknown if there are any liquid oceans underneath this layer. Due to the high pressure on the planet, it is theorised that there could be oceans made of liquid diamond",
+        "Type": "Terrestrial",
+      "length of year": 60190,
+      "Distance from sun": 4473.30,
+      "Velocity": 54300,
+      "Area of Solar System": "Outer Solar System" 
+    },
+    {
+        "name":"pluto",
+        "Description": "Pluto is a dwarf planet in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune. There may be millions of these icy objects, collectively referred to as Kuiper Belt objects (KBOs) or trans-Neptunian objects (TNOs), in this distant region of our solar system.\r\n\r\n    Pluto  which is smaller than Earths Moon  has a heart-shaped glacier thats the size of Texas and Oklahoma. This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows  but the snow is red.\r\n    \r\n    On July 14,\r\n    2015, NASAs New Horizons spacecraft made its historic flight through the Pluto system  providing the first close-up images of Pluto and its moons and collecting other data that has transformed our understanding of these mysterious worlds on the solar systems outer frontier.\r\n    \r\n    In the years since that groundbreaking flyby, nearly every conjecture about Pluto possibly being an inert ball of ice has been thrown out the window or flipped on its head.\r\n    \r\n    Its clear to me that the solar system saved the best for last! said Alan Stern, New Horizons principal investigator from the Southwest Research Institute, Boulder, Colorado. ","We could not have explored a more fascinating or scientifically important planet at the edge of our solar system. The New Horizons team worked for 15 years to plan and execute this flyby and Pluto paid us back in spades!":"\r\n    ",
+        "Type": "Dwarf Planet",
+      "length of year": 90530,
+      "Distance from sun": 5250.05,
+      "Velocity": 52702,
+      "Area of Solar System": "Outer Solar System"
+    }]
+ 
