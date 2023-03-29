@@ -30,16 +30,17 @@ body {
 }
 
 .spacer {
-    height: 100vh
+    height: 50vh
 }
 
 .transition .row {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 75vh;
     max-height: 90vh;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
