@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './PlanetModal.css';
+import './planetModal.css';
 
 const PlanetModal = () => {
   const [showModal, setShowModal] = useState(true);
