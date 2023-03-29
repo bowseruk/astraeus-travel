@@ -3,6 +3,7 @@ import {
     useScroll
 } from "framer-motion";
 import Layout from "../components/layout.jsx"
+import PlanetModal from "../components/planetModal.jsx";
 import SolarSystem from "../components/solarSystem.jsx";
 import './home.css';
 
@@ -12,7 +13,7 @@ function Home(props) {
     return (
         <div className="transition">
             <Layout>
-            {/* <Navigation/>  */}
+                <PlanetModal></PlanetModal>
             <div className="start-journey">
                 <h1 className="transition-title">Start your journey across the stars...</h1>
                 <p className="transition-subtitle">scroll to begin</p>
