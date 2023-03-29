@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Navigation from '../components/navigation'
 import PlanetPicture from '../components/planetPicture';
-import SizeComparison from "../components/SizeComparison";
+import SizeComparison from "../components/sizeComparison";
 import PlanetDescription from '../components/planetDescription';
 import PlanetData from '../components/planetData';
 import './planet.css'
