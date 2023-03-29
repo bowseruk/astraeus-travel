@@ -1,0 +1,10 @@
+.layout .footer-spacer{
+    padding-bottom: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .layout .footer-spacer{
+        padding-bottom: 12vh;
+        /* margin-bottom: 30vh; */
+    }
+}

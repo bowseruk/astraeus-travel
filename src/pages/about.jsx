@@ -16,13 +16,8 @@ function About() {
 
             <h2 id="explanation" ></h2>
 
-
-
-
-
-
             <div className="container5">
-                <figure><img src="/src/assets/images/hs-2015-29-a-xlarge_web.jpg " width="1000" height="750" alt="Shoes" /></figure>
+                <figure><img src="/src/assets/images/hs-2015-29-a-xlarge_web.jpg" width="1000" height="750" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title"><em>Christos Laios</em></h2>
                     <p> <em>I would like to die on Mars. Just not on impact. - Elon Musk

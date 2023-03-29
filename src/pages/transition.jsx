@@ -4,42 +4,42 @@ import {
     useScroll
 } from "framer-motion";
 import Home from './home.jsx';
+import Layout from "../components/layout.jsx"
+import SolarSystem from "../components/solarSystem.jsx";
+import Navigation from "../components/navigation.jsx";
 import './transition.css';
 
 // display opening page before animating to homepage
 
 function Transition(props) {
-
     const { scrollYProgress } = useScroll();
-
     return (
-        <AnimatePresence>
-            
+        <div className="transition">
+            <Layout>
+            {/* <Navigation/>  */}
             <div className="start-journey">
-                
-                <h1 className="transition-title">start your journey across the stars...</h1>
+                <h1 className="transition-title">Start your journey across the stars...</h1>
                 <p className="transition-subtitle">scroll to begin</p>
                 <span className="transition-subtitle-arrows">
                     <p>⌄⌄⌄</p>
                 </span>
-
+                <div className="spacer"></div>
                     <motion.div
                         style={{ scaleX: scrollYProgress }}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                     >
-                        <Home />
-
+                          
+                    <div className="row">                 
+                        <SolarSystem />
+                    </div>
+                        
+                        
                     </motion.div>
-
-            </div>
-            
-        </AnimatePresence>
-
-        
-        
-
+            </div> 
+            </Layout>
+        </div>
     )
 }
 
