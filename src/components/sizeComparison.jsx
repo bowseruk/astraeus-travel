@@ -15,9 +15,8 @@ function SizeComparison(props) {
      }
 
     return <div id='sizeComparison'>
-        <h2>SIZE OF {props.planet.toUpperCase()}</h2>
+        <h2>EARTH <span>{props.planet.toUpperCase()}</span></h2>
         <div className='earth' style={earthStyle}>
-            <p>Earth</p>
         </div>
         <div className="compPlanet" 
       style={compStyle}>

@@ -4,8 +4,15 @@
     background-color: black;
     font-weight: 800;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 #sizeComparison h2 {
+    color: grey;
+}
+#sizeComparison h2 span {
     color: rgb(248, 161, 0);
 }
 #sizeComparison .earth, #sizeComparison .compPlanet {
@@ -14,19 +21,17 @@
     justify-content: center;
     align-items: center;
     color: white;
-    top: 450; 
+    position: absolute;
 }
 #sizeComparison .earth {
     background-color: grey;
-    position: absolute;
-    z-index: 2; 
-    margin: 0 auto;
-    margin-left: 40px;
+    z-index: 1;
+    top: 50px; 
 }
 #sizeComparison .compPlanet {
-    background: linear-gradient(45deg, rgb(0 0 0), rgb(158, 103, 0), rgb(255 184 0));;
-    position: relative;
-    z-index: 1;
+    background: linear-gradient(45deg, rgb(0 0 0), rgb(158, 103, 0), rgb(255 184 0));
+    z-index: 2;
+    top: 100px;
 }
 #sizeComparison .compPlanet p {
   margin-top: -20%;
