@@ -13,13 +13,16 @@
   border-radius: 50%;
   transition: all 0.5s ease;
 }
+
 .logo:hover {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.5);
 }
+
 nav {
   min-width: 70%;
 }
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -41,16 +44,20 @@ nav a:hover {
   color: #f4ff24;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .header {
     position: fixed;
     bottom: 0;
     left: 0;
     background-color: black;
+    margin-top: 250px;
+    z-index: 10;
   }
+
   .header .logo {
     display: none;
   }
+
   nav a {
     font-size: 1rem;
     font-weight: 600;
@@ -58,11 +65,13 @@ nav a:hover {
     background-color: rgb(0, 0, 0);
     text-shadow: 0 0 3px #ff0000;
   }
+
   nav ul {
     max-height: 100px;
     max-width: 100%;
     flex-wrap: wrap;
   }
+
   nav li {
     margin: 10px;
   }

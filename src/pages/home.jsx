@@ -7,8 +7,6 @@ import './home.css'
 function Home(props) {
     return (
         <div>
-            <Navigation />
-
             {/* added fade in for home page when loaded */}
             <AnimatePresence>
                 <motion.div
