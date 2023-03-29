@@ -6,7 +6,7 @@
 
 Have you ever wanted to travel to the stars and explore the planets in our solar system? This application allows you to start your journey to our planets and find out things like, how many moons does it have? How far is it from the sun? How long a year is?
 
-Happy adventures! -> https://astraeustravel.com/
+[Happy adventures!](https://astraeustravel.com/)
 
 
 ## Table of Contents
@@ -28,12 +28,14 @@ Happy adventures! -> https://astraeustravel.com/
 
 ## Installation
 
-No installation needed - simply visit the website and start your journey to the stars.
+No installation needed - simply visit the website at [https://astraeustravel.com/](https://astraeustravel.com/) and start your journey to the stars.
 
 
 ## Usage
 
-[ADD SCREENSHOT]
+Load the webpage at [https://astraeustravel.com/](https://astraeustravel.com/) and scroll down to the solar system. Press the planet you would like to travel to.
+
+![Screenshot](./public/assets/images/screenshot.png)
 
 
 ## Contributing
