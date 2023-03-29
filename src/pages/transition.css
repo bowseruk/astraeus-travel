@@ -29,17 +29,16 @@
 
 .transition .row {
     display: flex;
-    align-content: space-between;
-}
-
-.transition .row > div {
-    min-width: 50vw;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    max-height: 90vh;
+    min-width: 100vw;
 }
 
 @media only screen and (max-width: 600px) {
     .transition .row {
         flex-direction: column;
-        margin-bottom: 30vh;
+        /* margin-bottom: 30vh; */
     }
 }

@@ -4,6 +4,7 @@ import {
     useScroll
 } from "framer-motion";
 import Home from './home.jsx';
+import Layout from "../components/layout.jsx"
 import SolarSystem from "../components/solarSystem.jsx";
 import Navigation from "../components/navigation.jsx";
 import './transition.css';
@@ -14,7 +15,8 @@ function Transition(props) {
     const { scrollYProgress } = useScroll();
     return (
         <div className="transition">
-            <Navigation/> 
+            <Layout>
+            {/* <Navigation/>  */}
             <div className="start-journey">
                 <h1 className="transition-title">Start your journey across the stars...</h1>
                 <p className="transition-subtitle">scroll to begin</p>
@@ -29,15 +31,14 @@ function Transition(props) {
                         viewport={{ once: true }}
                     >
                           
-                    <div className="row">
-                        
-                        <div><SolarSystem /></div>
-                        <div><p>Click on a planet to start your journey.</p></div>
+                    <div className="row">                 
+                        <SolarSystem />
                     </div>
                         
                         
                     </motion.div>
             </div> 
+            </Layout>
         </div>
     )
 }
