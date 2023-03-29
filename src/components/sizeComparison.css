@@ -1,0 +1,33 @@
+#sizeComparison {
+    overflow: hidden;
+    height: 300px;
+    background-color: black;
+    font-weight: 800;
+    text-align: center;
+}
+#sizeComparison h2 {
+    color: rgb(248, 161, 0);
+}
+#sizeComparison .earth, #sizeComparison .compPlanet {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 450; 
+}
+#sizeComparison .earth {
+    background-color: grey;
+    position: absolute;
+    z-index: 2; 
+    margin: 0 auto;
+    margin-left: 40px;
+}
+#sizeComparison .compPlanet {
+    background: linear-gradient(45deg, rgb(0 0 0), rgb(158, 103, 0), rgb(255 184 0));;
+    position: relative;
+    z-index: 1;
+}
+#sizeComparison .compPlanet p {
+  margin-top: -20%;
+}
