@@ -6,11 +6,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 // These are our page functions we are importing.
-import Home from './pages/home.jsx'
-import Transition from "./pages/transition.jsx";
+import Home from './pages/home.jsx';
 import About from "./pages/about.jsx";
-import Mars from './pages/mars.jsx'
-import Planet from './pages/planet.jsx'
+import Travel from "./pages/travel.jsx";
+import Mars from './pages/mars.jsx';
+import Planet from './pages/planet.jsx';
 // CSS file for the app
 import './App.css';
 
@@ -18,16 +18,19 @@ import './App.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Transition />,
+    element: <Home />,
   },
   {
     path: "about",
     element: <About />,
   },
-  
   {
     path: 'planet/mars',
     element: <Mars />
+  },
+  {
+    path: "travel/:planetID",
+    element: <Travel />
   },
   {
     path: "planet/:planetID",
@@ -40,7 +43,7 @@ const router = createBrowserRouter([
 // The app function that is called by main.jsx
 function App(props) {
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait" initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
       <RouterProvider router={router} />
     </AnimatePresence>
   )

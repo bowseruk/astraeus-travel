@@ -1,22 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import './solarSystem.css';
-
-const planets = [
-    {name: "mercury", position: "inner", dwarf: false, moons: []},
-    {name: "venus", position: "inner", dwarf: false, moons: []},
-    {name: "earth", position: "inner", dwarf: false, moons: [{name: "moon"}]},
-    {name: "mars", position: "inner", dwarf: false, moons: [{name: "phobos"}, {name: "deimos"}]},
-    {name: "ceres", position: "outer", dwarf: true, moons: []},
-    {name: "jupiter", position: "outer", dwarf: false, moons: []},
-    {name: "saturn", position: "outer", dwarf: false, moons: []},
-    {name: "uranus", position: "outer", dwarf: false, moons: []},
-    {name: "neptune", position: "outer", dwarf: false, moons: []},
-    {name: "pluto", position: "outer", dwarf: true, moons: []},
-    {name: "haumea", position: "outer", dwarf: true, moons: []},
-    {name: "makemake", position: "outer", dwarf: true, moons: []},
-    {name: "eris", position: "outer", dwarf: true, moons: []}
-]
+import planets from '../assets/data/planets.json';
 
 const styles = {};
 

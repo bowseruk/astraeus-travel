@@ -1,26 +1,16 @@
+// External Import
 import { useParams } from "react-router-dom";
-import Navigation from '../components/navigation'
+import {motion} from "framer-motion";
+// Custom Components
+import Layout from '../components/layout';
 import PlanetPicture from '../components/planetPicture';
+import SizeComparison from "../components/sizeComparison";
 import PlanetDescription from '../components/planetDescription';
 import PlanetData from '../components/planetData';
+// CSS
 import './planet.css'
-import {motion, AnimatePresence } from "framer-motion";
 
-
-// function Planet(props) {
-//     const {planetID = "mars"} = useParams()
-//     return (
-//         <div>
-//             <Navigation/>
-//             <PlanetPicture planet={planetID} />
-//             <PlanetDescription planet={planetID} />
-//             <PlanetData planet={planetID} />
-//         </div>
-//     )
-// }
-
-// export default Planet
-
+// This is a dynamic page for each planet (that does not have a custom page)
 function Planet(props) {
     const {planetID = "mars"} = useParams()
 
@@ -55,8 +45,8 @@ function Planet(props) {
 
     return (
         <div>
-            <Navigation/>
-            <AnimatePresence mode='wait'> 
+            <Layout>
+            {/* <AnimatePresence mode='wait'>  */}
             {/* mode='wait'same as exitBeforeEnter which allows each animation to complete before the next starts */}
             
                 <motion.div
@@ -81,7 +71,10 @@ function Planet(props) {
 
                     <motion.div>
                         <PlanetPicture planet={planetID} />
+                    </motion.div>
 
+                    <motion.div>
+                        <SizeComparison planet={planetID} />
                     </motion.div>
 
                     <motion.div>
@@ -95,7 +88,8 @@ function Planet(props) {
 
                 </motion.div>
 
-            </AnimatePresence>
+            {/* </AnimatePresence> */}
+            </Layout>
         </div>
     )
 }
