@@ -73,10 +73,7 @@ font-size: 70px;
 
 }
 
-.aboutPage img {
- 
-   max-width:75;
-}
+
 
 
 .aboutPage h1 {
@@ -93,4 +90,18 @@ font-size: 70px;
 .aboutPage p {
 color: whitesmoke;
 font-size: large;
+max-width: 400px;
+
 }
+
+
+
+ @media screen and (max-width:1000px) {
+    .aboutPage img {
+      
+      max-width: 60%;
+      max-height: 50%;
+    
+     
+    }
+  }  
