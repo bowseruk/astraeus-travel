@@ -10,6 +10,8 @@
     position: relative;
 }
 #sizeComparison h2 {
+    margin: 5px;
+    font-size: 35px;
     color: grey;
 }
 #sizeComparison h2 span {
