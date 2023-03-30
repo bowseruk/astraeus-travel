@@ -14,7 +14,7 @@ function AboutCard(props) {
                 <p className="quote-text card-text">"{props.quote}"</p>
                 <p className="attribute-text card-text">{props.quoteAttributed}</p>
                 </div>
-                <div class="card-spacer"></div>
+                <div className="card-spacer"></div>
                 <div className="card-social d-flex justify-content-around">
                 { props.github && <a href={props.github} className="btn btn-dark">
                     <i className="fa-brands fa-github" />

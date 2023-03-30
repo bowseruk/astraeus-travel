@@ -15,7 +15,6 @@ function Travel(props) {
     useEffect(() => {
         setTimeout(() => {
             if (counter <= 0) {
-                console.log('test')
                 navigate(`/planet/${planetID}`)
             }
             else if (counter > 0) {
