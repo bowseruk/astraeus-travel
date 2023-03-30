@@ -1,22 +1,37 @@
 // Import external modules
 import Layout from '../components/layout.jsx'
-import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from "react-router-dom";
 // CSS
 import './travel.css';
+// Images
+import shuttle from '../assets/images/shuttle.png'
 // display a transition page before the actual page.
 function Travel(props) {
-    const {planetID = "mars"} = useParams()
+    const [counter, setCounter] = useState(5)
+    const { planetID = "mars" } = useParams()
     const navigate = useNavigate();
-    setTimeout(()=>{ navigate(`/planet/${planetID}`) }, 3000);
+
+    useEffect(() => {
+        setTimeout(() => {
+            if (counter <= 0) {
+                console.log('test')
+                navigate(`/planet/${planetID}`)
+            }
+            else if (counter > 0) {
+                setCounter(counter - 1);
+            }
+        }, 1000);
+      }, [counter]);
     return (
         <div className="travel">
             <Layout>
-                <h2>Your are now travelling to {`${planetID.charAt(0).toLocaleUpperCase() + planetID.slice(1).toLocaleLowerCase()}`}</h2>
-                <p>It is ... miles away</p>
-                <p>You could fit all the planets in the solar system ... times in the distance travelled.</p>
-                <p>At a 1/4 the speed of light this will take ... days.</p>
-                <p>The next launch window for an efficient Hohmann transfer orbit is ...</p>
+                <div className="travel-window d-flex flex-column justify-content-center align-items-center">
+                    <img className="shuttle" src={shuttle} />
+                    <h2>You are now travelling to {`${planetID.charAt(0).toLocaleUpperCase() + planetID.slice(1).toLocaleLowerCase()}`}</h2>
+                    <p>Launching in t-minus:</p>
+                    <span>{counter} seconds</span>
+                </div>
             </Layout>
         </div>
     )
