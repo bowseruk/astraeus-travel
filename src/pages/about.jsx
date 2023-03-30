@@ -11,6 +11,7 @@ function About() {
         <section className="aboutPage">
             <Layout>
                 <h2>About page</h2>
+                <h3>The Team</h3>
                 <AboutGallery />
             </Layout>
         </section>

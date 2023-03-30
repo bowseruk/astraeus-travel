@@ -1,6 +1,13 @@
-.aboutPage h2 {
-  font-size: 50px;
+.aboutPage h2, .aboutPage h3{
   color: white;
   margin: 20px;
   text-align: center;
+}
+
+.aboutPage h2 {
+  font-size: 3rem;
+}
+
+.aboutPage h3 {
+  font-size: 2rem;
 }

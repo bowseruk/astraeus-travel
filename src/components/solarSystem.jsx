@@ -8,7 +8,7 @@ const styles = {};
 function SolarSystem(props) {
     const navigate = useNavigate();
     return (
-        <div className="solar-system" onClick={(event) => {navigate(`/planet/${event.target.id}`)}}>
+        <div className="solar-system" onClick={(event) => {navigate(`/travel/${event.target.id}`)}}>
             <div className="sun" />
             { planets.map((planet) => (<div key={`orbit-${planet.name}`} className={`${planet.position}-system${(planet.dwarf) ? " dwarf-planet": ""} orbit orbit-${planet.name}`} >
                 <div key={planet.name} id={planet.name} className={`planet planet-${planet.name}`} />

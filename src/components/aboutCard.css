@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Delicious+Handrawn:regular,bold,italic&subset=latin,latin-ext');
+
+.team-card img {
+    object-fit: cover;
+    aspect-ratio: 1.5;
+}
+
+.team-card, .team-card .card-body{
+    height: 100% !important;
+}
+
+.quote-text {
+    font-family: 'Delicious Handrawn';
+}
+
+.attribute-text {
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

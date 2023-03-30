@@ -1,25 +1,27 @@
 [
-  { "name": "mercury", "position": "inner", "dwarf": false, "moons": [] },
-  { "name": "venus", "position": "inner", "dwarf": false, "moons": [] },
+  { "name": "mercury", "position": "inner", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 1 },
+  { "name": "venus", "position": "inner", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 0 },
   {
     "name": "earth",
     "position": "inner",
     "dwarf": false,
-    "moons": [{ "name": "moon" }]
+    "moons": [{ "name": "moon" }],
+    "averageDistanceToEarthKM": 0
   },
   {
     "name": "mars",
     "position": "inner",
     "dwarf": false,
-    "moons": [{ "name": "phobos" }, { "name": "deimos" }]
+    "moons": [{ "name": "phobos" }, { "name": "deimos" }],
+    "averageDistanceToEarthKM": 255000000
   },
-  { "name": "ceres", "position": "outer", "dwarf": true, "moons": [] },
-  { "name": "jupiter", "position": "outer", "dwarf": false, "moons": [] },
-  { "name": "saturn", "position": "outer", "dwarf": false, "moons": [] },
-  { "name": "uranus", "position": "outer", "dwarf": false, "moons": [] },
-  { "name": "neptune", "position": "outer", "dwarf": false, "moons": [] },
-  { "name": "pluto", "position": "outer", "dwarf": true, "moons": [] },
-  { "name": "haumea", "position": "outer", "dwarf": true, "moons": [] },
-  { "name": "makemake", "position": "outer", "dwarf": true, "moons": [] },
-  { "name": "eris", "position": "outer", "dwarf": true, "moons": [] }
+  { "name": "ceres", "position": "outer", "dwarf": true, "moons": [], "averageDistanceToEarthKM": 939400000 },
+  { "name": "jupiter", "position": "outer", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 778000000 },
+  { "name": "saturn", "position": "outer", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "uranus", "position": "outer", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "neptune", "position": "outer", "dwarf": false, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "pluto", "position": "outer", "dwarf": true, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "haumea", "position": "outer", "dwarf": true, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "makemake", "position": "outer", "dwarf": true, "moons": [], "averageDistanceToEarthKM": 0 },
+  { "name": "eris", "position": "outer", "dwarf": true, "moons": [], "averageDistanceToEarthKM": 0 }
 ]
