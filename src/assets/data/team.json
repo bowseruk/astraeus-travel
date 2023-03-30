@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "fullName": "Adam Bolsover",
+        "picIndex": 0,
+        "quote": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
+        "quoteAttributed": "Arthur C. Clarke",
+        "github": "https://github.com/bowseruk"
+    },
+    {
+        "id": 1,
+        "fullName": "Anil Jassi",
+        "picIndex": 1,
+        "quote": "Modern science says:\n'The sun is the past, the earth is the present, the moon is the future.'\nFrom an incandescent mass we have originated, and into a frozen mass we shall turn.\n Merciless is the law of nature, and rapidly and irresistibly we are drawn to our doom.",
+        "quoteAttributed": "Nikola Tesla",
+        "github": "https://github.com/Skyline199"
+    },
+    {
+        "id": 2,
+        "fullName": "Christos Laios",
+        "picIndex": 2,
+        "quote": "I would like to die on Mars. Just not on impact.",
+        "quoteAttributed": "Elon Musk",
+        "github": "https://github.com/ChrisCode3"
+    },
+    {
+        "id": 3,
+        "fullName": "Claire Ingram",
+        "picIndex": 3,
+        "quote": "Make it so!",
+        "quoteAttributed": "Jean-Luc Picard",
+        "github": "https://github.com/Ing3rs"
+    },
+    {
+        "id": 4,
+        "fullName": "Clarissa Cole",
+        "picIndex": 4,
+        "quote": "So much universe, so little time.",
+        "quoteAttributed": "Terry Pratchett",
+        "github": "https://github.com/RissaC2"
+    },
+    {
+        "id": 5,
+        "fullName": "Daisy Everard",
+        "picIndex": 5,
+        "quote": "Monoculture, turned inward in an everlasting round of tedium.\nOnly by accepting the other can it truly find diversion and inspiration;\n only by allowing the universe to be separate from it can it have the infinite variety it craves.",
+        "quoteAttributed": "Adrian Tchaikovsky, Children of Ruin",
+        "github": "https://github.com/DaisyEverard"
+    }
+]

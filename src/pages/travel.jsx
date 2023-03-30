@@ -12,7 +12,7 @@ function Travel(props) {
     return (
         <div className="travel">
             <Layout>
-                <h2>Your are now travelling to {planetID}</h2>
+                <h2>Your are now travelling to {`${planetID.charAt(0).toLocaleUpperCase() + planetID.slice(1).toLocaleLowerCase()}`}</h2>
                 <p>It is ... miles away</p>
                 <p>You could fit all the planets in the solar system ... times in the distance travelled.</p>
                 <p>At a 1/4 the speed of light this will take ... days.</p>

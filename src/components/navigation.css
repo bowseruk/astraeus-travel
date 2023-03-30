@@ -45,6 +45,10 @@ nav a:hover {
   color: #f4ff24;
 }
 
+.navLink i {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .header {
     position: fixed;
@@ -76,5 +80,13 @@ nav a:hover {
 
   nav li {
     margin: 10px;
+  }
+
+  .navLink i {
+    display: inline;
+  }
+
+  nav ul li span {
+    display: none;
   }
 }
