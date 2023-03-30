@@ -5,7 +5,7 @@ import Layout from "../components/layout.jsx";
 import AboutGallery from "../components/aboutGallery.jsx";
 // CSS
 import "./about.css";
-
+// This function is what is launched when the About page is selected
 function About() {
     return (
         <section className="aboutPage">
