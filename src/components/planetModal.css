@@ -1,38 +1,43 @@
-
 .modal-background {
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    width: 45vw;
-    height: 45vh ;
-    background-color: rgba(118, 2, 131, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Add this line */
-    border-radius: 20px;
-    border: rgba(220, 18, 247, 0.9);
- 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  height: 45vh;
+  background-color: rgba(118, 2, 131, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Add this line */
+  border-radius: 20px;
+  border: rgba(220, 18, 247, 0.9);
+}
 
-  }
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .my-button {
-    background-color: rgb(21, 7, 112);
-    color: white;
-    font-size: 16px;
-    padding: 8px 16px;
-   
-    align-items: center;
-  }
-  
-  .heading {
-    font-size: 34px;
-    color: rgb(247, 16, 247);
-    font-weight: bold;
-  
-  }
-  
-  .heading-two {
-color: white;
+.modal-info .my-button {
+  background-color: rgb(21, 7, 112);
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
 
-  }
+  align-items: center;
+}
+
+.modal-info .heading-one {
+  font-size: 34px;
+  color: rgb(247, 16, 247);
+  font-weight: bold;
+}
+
+.modal-info .heading-two {
+  color: white;
+}

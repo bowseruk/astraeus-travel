@@ -13,7 +13,6 @@ function Home(props) {
     return (
         <div className="transition">
             <Layout>
-                <PlanetModal></PlanetModal>
             <div className="start-journey">
                 <h1 className="transition-title">Start your journey across the stars...</h1>
                 <p className="transition-subtitle">scroll to begin</p>
@@ -27,6 +26,7 @@ function Home(props) {
                         whileInView="visible"
                         viewport={{ once: true }}
                     > 
+                    <PlanetModal />
                     <div className="row">                 
                         <SolarSystem />
                     </div>  
