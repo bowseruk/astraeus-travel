@@ -13,8 +13,14 @@
     font-family: 'Delicious Handrawn';
 }
 
+.card-spacer {
+    height: 20px;
+    width: 100%;
+}
+
 .attribute-text {
     text-align: right;
     font-size: 0.8rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }

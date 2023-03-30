@@ -27,8 +27,10 @@ function Home(props) {
                         viewport={{ once: true }}
                     > 
                     <PlanetModal />
-                    <div className="row">                 
+                    <div className="row">
+                        <div className="col">              
                         <SolarSystem />
+                        </div>
                     </div>  
                     </motion.div>
             </div> 
