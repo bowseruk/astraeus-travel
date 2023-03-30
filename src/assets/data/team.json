@@ -5,7 +5,8 @@
         "picIndex": 0,
         "quote": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
         "quoteAttributed": "Arthur C. Clarke",
-        "github": "https://github.com/bowseruk"
+        "github": "https://github.com/bowseruk",
+        "linkedin": "https://www.linkedin.com/in/adambolsover/"
     },
     {
         "id": 1,
@@ -44,7 +45,7 @@
         "fullName": "Daisy Everard",
         "picIndex": 5,
         "quote": "Monoculture, turned inward in an everlasting round of tedium.\nOnly by accepting the other can it truly find diversion and inspiration;\n only by allowing the universe to be separate from it can it have the infinite variety it craves.",
-        "quoteAttributed": "Adrian Tchaikovsky, Children of Ruin",
+        "quoteAttributed": "Adrian Tchaikovsky",
         "github": "https://github.com/DaisyEverard"
     }
 ]
