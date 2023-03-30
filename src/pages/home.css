@@ -40,8 +40,6 @@ body {
     justify-content: center;
     min-height: 75vh;
     max-height: 90vh;
-    width: 100%;
-
 }
 
 .transition .row > div {
